@@ -6,9 +6,6 @@
 This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
 
 
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
 
 <h2>Environments and Technologies Used</h2>
 
@@ -22,11 +19,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- Azure Virtual Machine
+- osTicket Installation file
+- SQL
+
+
 
 <h2>Installation Steps</h2>
 
@@ -96,10 +93,27 @@ Some features are turned off, so go to IIS > Sites > Default > osTicket, open PH
 
 STEP 12:
 
+Find this file on your computer C:\inetpub\wwwroot\osTicket\include\ost-sample config.php, Right-click on it, and select Rename. Change the name to: ost-config.php Make sure the file is now saved as C:\inetpub\wwwroot\osTicket\include\ost-config.php
+
+![image](https://github.com/user-attachments/assets/c7249bcf-d9d4-4a41-a4a5-02488d7e0d5b)
+
+STEP 13
+
+Go to the "osTicket-Installation-Files" folder and install HeidiSQL. Open HeidiSQL, and create a new session, in step 7 the username and password used for MySQL will be used for HeidiSQL, then click Connect. Once you're in, create a new database and name it "osTicket".
+![image](https://github.com/user-attachments/assets/1e9b9e2a-0d9a-4962-bb7f-1aa8cb5c78c1)
+![image](https://github.com/user-attachments/assets/271c5a28-26b4-49f5-a1d5-65067e3245e9)
 
 
+Step 14
+
+Finish setting up osTicket in your browser. For the MySQL Database, type osTicket. For the MySQL Username, type root, and for the MySQL Password, type root. Then, click "Install Now!" to finish. 
+
+![image](https://github.com/user-attachments/assets/40d49b65-bea4-49f6-8094-018d697843d8)
 
 
+Browse to your help desk login page: [HTTP://localhost/osTicket/scp/login.php](http://localhost/osTicket/scp/login.php)
+
+There you have it!
 
 
 

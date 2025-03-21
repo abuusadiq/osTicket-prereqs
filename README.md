@@ -47,7 +47,7 @@ STEP 3:
 
 Now that you're connected to your VM, the next step is to enable IIS. Go to the Control Panel, then select Uninstall a program. On the left, click Turn Windows features on or off. A list will pop up, and from there, enable Internet Information Services.
 
-![image](https://github.com/user-attachments/assets/405140f4-f38c-4757-b323-b530783ca21f)
+![image](https://github.com/user-attachments/assets/1c631a9e-d2c1-4a6c-8016-b381f1b5b095)
 
 STEP 4:
 
